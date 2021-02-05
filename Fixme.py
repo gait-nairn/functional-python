@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+
 '''
 Your solution for each function should be only a single line long.
 In particular, you may not use any loops when implementing these functions;
-instead, you must use either the map and filter functions 
+instead, you must use either the map and filter functions
 or list comprehensions.
 '''
 
@@ -23,12 +24,12 @@ def evens(n):
     []
     '''
     lc = []
-    return lc + list(filter(lambda x: x%2 == 0, list(range(0,n + 1))))
+    return lc + list(filter(lambda x: x % 2 == 0, list(range(0, n + 1))))
 
 
 def threes(n):
     '''
-    Returns a list of all numbers from 0 to n 
+    Returns a list of all numbers from 0 to n
     inclusive that contain the digit 3.
 
     >>> threes(2)
@@ -43,7 +44,8 @@ def threes(n):
     [3, 13, 23, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 43]
     '''
     lc = []
-    return lc + list(filter(lambda x: 3 in list(map(int, str(x))), list(range(0, n + 1))))
+    return lc + list(filter(lambda x: 3 in list(
+        map(int, str(x))), list(range(0, n + 1))))
 
 
 def small_words(text):
